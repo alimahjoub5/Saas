@@ -209,9 +209,9 @@ See `app/`, `database/migrations/`, and `tests/Feature/` for concrete examples.
 5. Enable HTTPS.
 
 ### VPS (recommended)
-1. Install Docker + Docker Compose.
+1. Install PHP 8.3, Composer, MySQL, and Redis.
 2. Copy `.env.example` to `.env` and set secrets.
-3. Run `docker compose up -d --build`.
-4. Run `docker compose exec app php artisan migrate --seed`.
-5. Run `docker compose exec app php artisan horizon` for queues.
+3. Run `composer install`.
+4. Run `php artisan migrate --seed`.
+5. Run `php artisan horizon` for queues.
 6. Configure Nginx reverse proxy for HTTPS.

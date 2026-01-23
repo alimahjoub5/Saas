@@ -14,12 +14,12 @@ LeadPilot is a compliance-first system to help freelancers acquire clients using
 - AI scoring + portfolio matching
 - Follow-up scheduler (templates only)
 
-## Quick Start (Docker)
+## Quick Start (Local)
 
 ```bash
 cp .env.example .env
-docker compose up -d --build
-docker compose exec app php artisan migrate --seed
+composer install
+php artisan migrate --seed
 ```
 
 ## Compliance Guardrails
